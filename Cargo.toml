@@ -1,0 +1,58 @@
+[workspace]
+members = ["crates/server-core", "crates/shupdtp-db"]
+
+[package]
+name = "shu_pdtp"
+version = "0.1.0"
+authors = ["slhmy"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Actor model
+actix = "0.10.0"
+
+# Web framework
+actix-web = "3"
+# Middleware
+actix-identity = "0.3"
+actix-cors = "0.5"
+# Extension
+actix-multipart = "0.3"
+actix-http = "2.2"
+
+# ORM and Query Builder
+diesel = { version = "1.4.8", features = ["postgres", "uuidv07", "chrono", "r2d2"] }
+
+# Framework for serializing and deserializing
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+
+# Other libraries
+thiserror = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "0.8", features = ["serde", "v4"] }
+structopt = "0.3"
+dotenv = "0.15"
+log = "0.4"
+env_logger = "0.9"
+argon2rs = "0.2"
+rand = "0.8"
+time = "0.2"
+shrinkwraprs = "0.2"
+futures = "0.3"
+toml = "0.5"
+sha2 = "0.10.2"
+sha-1 = "0.10.0"
+md-5 = "0.9.1"
+hex = "0.4"
+hmac = "0.12.1"
+base64 = "0.13.0"
+digest = "0.9.0"
+lazy_static = "1.1"
+regex = "1.4"
+
+server-core = { path = "crates/server-core" }
+shupdtp-db = { path = "crates/shupdtp-db" }
