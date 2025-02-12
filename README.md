@@ -4,6 +4,10 @@
 
 This is a microservices-based programming and judging system with Rust (Actix-Web), PostgreSQL (Diesel ORM) and Vue.js, supporting real-time submissions and evaluation
 
+
+https://github.com/user-attachments/assets/fd2ce64d-e684-4843-a442-657dbd36175a
+
+
 ## Related Project
 
 [OJ_frontend](https://github.com/xiangxichen26/OJ_frontend)
